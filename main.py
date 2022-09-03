@@ -124,7 +124,7 @@ def deal():
     player_hand.add_card(deck.deal_card())
     player_hand.add_card(deck.deal_card())
 
-    outcome = "You may hit or stand."
+    outcome = "You may Hit or Stand."
 
     if in_play:
         losses += 1
@@ -221,16 +221,16 @@ def draw(canvas):
     player_pos = [100, 300]
     player_hand.draw(canvas, player_pos)
 
-    canvas.draw_text("Black Jack", [200, 50], 39, 'Black')
+    canvas.draw_text("Black Jack", [200, 50], 26, 'Black')
 
     if outcome_special != "":
-        canvas.draw_text(outcome_special, [100, 215], 26, 'Black')
-    canvas.draw_text(outcome, [100, 245], 26, 'Black')
+        canvas.draw_text(outcome_special, [100, 225], 17, 'Black')
+    canvas.draw_text(outcome, [100, 255], 17, 'Black')
     if not in_play:
-        canvas.draw_text("Would you like to play again?  Click Deal", [100, 275], 26, 'Black')
-    canvas.draw_text(("Wins: " + str(wins)), [100, 450], 26, 'Black')
-    canvas.draw_text(("Losses: " + str(losses)), [100, 480], 26, 'Black')
-    canvas.draw_text(("Ties: " + str(ties)), [100, 510], 26, 'Black')
+        canvas.draw_text("Would you like to play again?  Click Deal.", [100, 285], 17, 'Black')
+    canvas.draw_text(("Wins: " + str(wins)), [100, 450], 17, 'Black')
+    canvas.draw_text(("Losses: " + str(losses)), [100, 480], 17, 'Black')
+    canvas.draw_text(("Ties: " + str(ties)), [100, 510], 17, 'Black')
 
     if in_play:
         dealer_first_card_pos = [dealer_pos[0] + .5 * CARD_BACK_SIZE[0], dealer_pos[1] + .5 * CARD_BACK_SIZE[1]]
