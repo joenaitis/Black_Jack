@@ -1,4 +1,4 @@
-# Simple Blackjack
+# Simple Blackjack, done as a project for the online course "An Introduction to Interactive Programming in Python"
 
 import simpleguitk as simplegui
 import random
