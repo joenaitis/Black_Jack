@@ -36,8 +36,7 @@ class Card:
         else:
             self.suit = None
             self.rank = None
-            print
-            "Invalid card: ", suit, rank
+            print("Invalid card: ", suit, rank)
 
     def __str__(self):
         return self.suit + self.rank
@@ -130,14 +129,14 @@ def deal():
         losses += 1
         outcome_special = "You dealt another game too soon and lost."
 
-    print
-    ""
-    print
-    "Dealer %s" % dealer_hand
-    print
-    "Player %s" % player_hand
-    print
-    deck
+    #print
+    #""
+    #print
+    #"Dealer %s" % dealer_hand
+    #print
+    #"Player %s" % player_hand
+    #print
+    #deck
     in_play = True
 
 
@@ -156,17 +155,17 @@ def hit():
     elif not in_play and len(outcome) < 28:
         outcome = "The game is over silly. " + outcome
 
-    print
-    ""
-    print
-    "Dealer %s" % dealer_hand
-    print
-    "Player %s" % player_hand
-    print
-    outcome
-    if not in_play:
-        print
-        "You have " + str(losses) + " losses, " + str(ties) + "ties, and " + str(wins) + " wins."
+    #print
+    #""
+    #print
+    #"Dealer %s" % dealer_hand
+    #print
+    #"Player %s" % player_hand
+    #print
+    #outcome
+    #if not in_play:
+        #print
+        #"You have " + str(losses) + " losses, " + str(ties) + "ties, and " + str(wins) + " wins."
 
 
 def stand():
@@ -199,16 +198,16 @@ def stand():
     # if hand is in play, repeatedly hit dealer until his hand has value 17 or more
 
     # assign a message to outcome, update in_play and score
-    print
-    ""
-    print
-    "Dealer %s" % dealer_hand
-    print
-    "Player %s" % player_hand
-    print
-    outcome
-    print
-    "You have " + str(losses) + " losses, " + str(ties) + "ties, and " + str(wins) + " wins."
+    #print
+    #""
+    #print
+    #"Dealer %s" % dealer_hand
+    #print
+    #"Player %s" % player_hand
+    #print
+    #outcome
+    #print
+    #"You have " + str(losses) + " losses, " + str(ties) + "ties, and " + str(wins) + " wins."
 
 
 # draw handler
