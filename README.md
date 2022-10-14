@@ -1,4 +1,4 @@
-# Black_Jack
+# Blackjack
 
 I designed a one-person blackjack game played against the dealer.  The program employs three classes (card, hand, and deck), event functions (deal, hit, or stand), and a draw function and runs using two imported packages (simpleguitk and random).  For images of playing cards, I used a tiled image of a deck of cards.
 
